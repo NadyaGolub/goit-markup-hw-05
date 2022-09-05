@@ -67,7 +67,13 @@
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button" class="button-primary">Замовити послугу</button>
+          <button data-modal-open type="button" class="button-primary">Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>hj</p>
+              <button data-modal-close>Закрити</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -121,19 +127,29 @@
           </ul>
         </div>
       </section>
-
+      <!-- ЧИМ МИ ЗАЙМАЄМОСЯ -->
       <section class="section-work">
         <div class="container">
           <h2 class="section-headline">Чим ми займаємося</h2>
           <ul class="hero-list">
+            <li class="product">
+              <div class="product-box">
+                <img src="./images/studio/Comp.jpg" alt="Робота за коп'ютером" width="370" />
+                <article class="article-title">Десктопні додатки</article>
+              </div>
+            </li>
+
             <li>
-              <img src="./images/studio/Comp.jpg" alt="Робота за коп'ютером" width="370" />
+              <div class="product-box">
+                <img src="./images/studio/Phone.jpg" alt="Робота з телефоном" width="370" />
+                <article class="article-title">Мобільні додатки</article>
+              </div>
             </li>
             <li>
-              <img src="./images/studio/Phone.jpg" alt="Робота з телефоном" width="370" />
-            </li>
-            <li>
-              <img src="./images/studio/Tablet.jpg" alt="Робота на планшеті" width="370" />
+              <div class="product-box">
+                <img src="./images/studio/Tablet.jpg" alt="Робота на планшеті" width="370" />
+                <article class="article-title">Дизайнерські рішення</article>
+              </div>
             </li>
           </ul>
         </div>
@@ -560,5 +576,6 @@
       </div>
       >
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
