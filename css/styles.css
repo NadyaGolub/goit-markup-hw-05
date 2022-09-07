@@ -64,9 +64,13 @@ body {
 .item {
   width: 370px;
   overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item:hover {
+.item:hover,
+.item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -121,6 +125,9 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current-title:hover,
 .current-title:focus {
@@ -139,6 +146,9 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current-contacts:hover,
 .current-contacts:focus {
@@ -180,8 +190,12 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--accent-color);
 }
 
@@ -189,6 +203,9 @@ body {
   fill: var(--secondary-text-color);
   stroke: var(--secondary-text-color);
   margin-right: 10px;
+  transition-property: fill, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-icon:hover,
 .contacts-icon:focus {
@@ -440,6 +457,8 @@ body {
   height: 44px;
   background-color: var(--primary-text-color);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -479,6 +498,9 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partners-icon:hover,
 .partners-icon:focus {
@@ -487,6 +509,9 @@ body {
 
 .socials-partners-icon {
   fill: var(--icons-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-partners-icon:hover,
@@ -519,6 +544,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -550,6 +578,9 @@ body {
   bottom: 63px;
 
   position: absolute;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text:hover {
@@ -557,6 +588,7 @@ body {
 }
 .portfolio-box {
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-overlay {
@@ -651,6 +683,9 @@ body {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .items-contacts:hover,
 .items-contacts:focus {
@@ -684,6 +719,9 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link-footer:hover,
